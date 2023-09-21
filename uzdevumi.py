@@ -1,6 +1,7 @@
 def linulejas(daudzums, cena):
-    linueja_cena = 4,24
-    izmaksa = linueja_cena * cena
-    return izmaksa * daudzums
+    cena = float(input("kada ir cena linolejam"))
+    daudzums = float(input("kads ir linoleju daudzums"))
+    summa= daudzums * cena 
+    return summa
 print(linulejas)
     
