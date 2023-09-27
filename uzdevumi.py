@@ -5,3 +5,4 @@ def linulejas(daudzums, cena):
     return summa
 print(linulejas)
     
+    
