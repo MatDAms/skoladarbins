@@ -1,2 +1,0 @@
-# skolas darbi
- macibas
