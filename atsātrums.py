@@ -1,2 +1,2 @@
-x = str.expandtabs(input("ievadi tekstu"))
+x = str.partition(input("ievadiet skaitli"))
 print(x)
