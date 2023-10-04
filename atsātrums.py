@@ -1,0 +1,1 @@
+x = str.expandtabs(input("ievadi tekstu"))
