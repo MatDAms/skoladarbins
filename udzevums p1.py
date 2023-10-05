@@ -1,7 +1,10 @@
+import random
 x = str(input("uzrakstiet vardu un uzvardu"))
-c =int(input("cik stradajat mēnesi"))
+c =int(input("cik stradajat mēnesi"))#pasaka pamat informaciju#
 def darbs(stundas):
-    algastun = 9
-    return stundas * algastun
-stundas = c
-print(darbs)
+    return c*stundas
+print(darbs(random.randrange(4,5)))
+if c<40:
+    print("ši ir mēneša maksa",darbs)
+else:
+    print("pieskaita 30 bonosu",darbs)
