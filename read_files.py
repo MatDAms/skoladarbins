@@ -1,7 +1,7 @@
 def burti_a(fails):
-    with open(fails,'r') as f:
-        saturs = f.read()
-        skaits = saturs.count('a')
+    f= open(fails,'r')
+    saturs = f.read()
+    skaits = saturs.count('a')
     return skaits
 fails="teksts 1.txt"
 skaits = burti_a(fails)
