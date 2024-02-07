@@ -1,4 +1,4 @@
-import tkinter as tk
+
 import tkinter as tk
 from tkinter import ttk
 c = tk.Tk() #definet galveno logu
@@ -21,5 +21,10 @@ pog.pack()
 photo = tk.PhotoImage(file='skoladarbins/valentines-day.png')
 image_label = ttk.Label(c,image=photo,padding=5)
 image_label.pack(pady =120)
+def funky():
+    try:
+        message.configure(text = int(e.get()) + "" + int(e1.get()))
+    except: ValuErro
+    message = tk.Label(c, text="nevar šādu atbildi iegūt")
 
 c.mainloop()
