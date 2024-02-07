@@ -1,10 +1,21 @@
-from tkinter import *
-top = Tk()  
-top.geometry("400x250")  
-Username = Label(top, text = "Username").place(x = 30,y = 50)  
-email = Label(top, text = "Email").place(x = 30, y = 90)  
-password = Label(top, text = "Password").place(x = 30, y = 130)  
-e1 = Entry(top).place(x = 80, y = 50)  
-e2 = Entry(top).place(x = 80, y = 90)  
-e3 = Entry(top).place(x = 95, y = 130)  
-top.mainloop()  
+import tkinter as tk
+from tkinter import ttk
+c = tk.Tk() #definet galveno logu
+c.title('jauns window') # loga vārds
+c.geometry("600x400") # loga lielums
+message = tk.Label(c, text="programmējam")
+message.pack()
+def clicked():
+    message.configure(text = "ko dari!!!")
+
+
+
+button = ttk.Button(c, text='Nospied mani',command = clicked) # ievieto pogu
+button.pack()
+
+def click():
+    message.configure(text ="")
+but = tk.Button(c, text= "delete", fg = "red", command = click)
+but.pack()
+
+c.mainloop() # programmas palaišana
